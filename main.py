@@ -14,6 +14,14 @@ def players():
         'Gianis Antetokounmpo',
         'Lebron James',
         'Klay Thompson',
+        'Kevin Durant',
+        'Michael Jordan',
+        'Kobe Bryant',
+        'Steve Nash',
+        'Boban Marjanovic',
+        'Kawhi Leonard',
+        'MP',
+        "Shaquille O'Neal",
     ]
 
 def main():
