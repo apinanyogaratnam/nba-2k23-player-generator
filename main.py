@@ -18,7 +18,7 @@ def players():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--players', type=int, default=5)
+    parser.add_argument('--players', type=int, default=1)
     args = parser.parse_args()
     print(random.sample(players(), args.players))
 
