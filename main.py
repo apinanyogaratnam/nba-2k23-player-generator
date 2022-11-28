@@ -18,3 +18,7 @@ def players():
 def main():
     random_player = random.choice(players())
     print(random_player)
+
+
+if __name__ == '__main__':
+    main()
