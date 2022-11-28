@@ -2,8 +2,8 @@ import random
 import argparse
 
 
-def players():
-    return [
+def players() -> set:
+    return set([
         'Fred VanVleet',
         'Kyle Lowry',
         'Devin Booker',
@@ -22,7 +22,7 @@ def players():
         'Kawhi Leonard',
         'MP',
         "Shaquille O'Neal",
-    ]
+    ])
 
 def main():
     parser = argparse.ArgumentParser()
