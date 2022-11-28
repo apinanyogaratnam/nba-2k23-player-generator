@@ -30,7 +30,7 @@ def main():
     parser.add_argument('--player_2', type=int, default=1)
     args = parser.parse_args()
 
-    generated_players = random.sample(players(), args.player_1 + args.player_2)
+    generated_players = random.sample(list(players()), args.player_1 + args.player_2)
     player_1 = generated_players[:args.player_1]
     player_2 = generated_players[args.player_1:]
 
