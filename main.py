@@ -26,9 +26,16 @@ def players() -> set:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--players', type=int, default=1)
+    parser.add_argument('--player_1', type=int, default=1)
+    parser.add_argument('--player_2', type=int, default=1)
     args = parser.parse_args()
-    print(random.sample(players(), args.players))
+
+    generated_players = random.sample(players(), args.player_1 + args.player_2)
+    player_1 = generated_players[:args.player_1]
+    player_2 = generated_players[args.player_1:]
+
+    print(f'Player 1: {player_1}')
+    print(f'Player 2: {player_2}')
 
 
 if __name__ == '__main__':
