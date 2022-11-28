@@ -1,4 +1,5 @@
 import random
+import argparse
 
 
 def players():
@@ -16,8 +17,10 @@ def players():
     ]
 
 def main():
-    random_player = random.choice(players())
-    print(random_player)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--players', type=int, default=5)
+    args = parser.parse_args()
+    print(random.sample(players(), args.players))
 
 
 if __name__ == '__main__':
